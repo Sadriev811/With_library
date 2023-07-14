@@ -1,0 +1,337 @@
+@media (max-width:1200px) {
+    .container {
+        padding: 0 20px;
+    }
+    .header .container .in_header .left {
+        display: none;
+    }
+    .header .container .in_header {
+        justify-content: space-between;
+    }
+    .header .container .in_header .center {
+        margin-right: 50px;
+    }
+    .first .container .first_center_text .first_text h1 {
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 43.59px;
+        letter-spacing: 0;
+    }
+    .first .container .first_center_text .first_text {
+        max-width: 434px;
+    }
+    .first .container .first_center_text .first_text h4 {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24.13px;
+        letter-spacing: 0;
+    }
+    .about {
+        height: auto;
+    }
+    .about .container .about_in .about_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .about .container .about_in .about_grid .about_block {
+        margin: 0 auto;
+    } 
+    .slider .swiper_wraper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    .slider .swiper_wraper .swiper_slide .slide_in .slide_img {
+       display: none;
+    }
+    .slider {
+        width: 100%;
+        height: auto;
+        background: linear-gradient(94.31deg, rgba(212, 20, 90, 0.25) 0.96%, rgba(46, 49, 146, 0.25) 104.83%);
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .slider .swiper_wraper .swiper_slide {
+        width: 536px;
+        height: 187px;
+        border-radius: 9px;
+        margin: 20px 30px;
+        padding: 0 45px;
+        padding-top: 45px;
+    }
+    .on_logo2 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-weight: 900;
+    font-size: 25px;
+    line-height: 35.19px;
+    letter-spacing: 0;
+    font-style: italic;
+    cursor: pointer;
+    }
+    .first .container .modalka .block {
+        max-width: 833px;
+        height: 392.18px;
+        position: relative;
+        top: 177px;
+        left: 94px;
+    }
+          
+}
+@media(max-width:992px) {
+    .first {
+        height: auto;
+    }
+    .first .container .first_center_text .first_text h1 {
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 0;
+    }
+    .first .container .first_center_text .first_text h4 {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22.13px;
+        letter-spacing: 0;
+    }
+    .first .container .first_center_text .first_text {
+        max-width: 305px;
+    }
+    .footer .container .footer_text {
+        padding: 50px 200px;
+        display: block;
+    }
+    .footer .container .footer_text .were  {
+        padding: 30px;
+        text-align: center;
+    }
+    .footer .container .footer_text .contact  {
+        padding: 30px;
+        text-align: center;
+    }
+    .footer .container .footer_text .about_were h3 {
+        padding: 30px;
+        text-align: center;
+    }
+    .footer .container .footer_text .about_were p {
+        /* width: 224px; */
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0;
+        text-align: center;
+    }
+    .on_logo2 {
+        font-size: 18px;
+    }
+    .first .container .modalka .block {
+        max-width: 688px;
+        height: 392.18px;
+        position: relative;
+        top: 177px;
+        left: 41px;
+    }
+    .first .container .modalka .block .block_bg .block_in .inp2 {
+        width: 500.73px;
+        height: 73.65px;
+        margin: 10px auto;
+    }
+    .first .container .modalka .block .block_bg .block_in .inp1 {
+            width: 311.49px;
+            margin-bottom: 14px;
+    }
+    .first .container .modalka .block .block_bg .block_in .inp {
+        margin-right: 0px;
+    }
+}
+@media(max-width:768px) {
+    .first .container .in_first  {
+        display: none;
+    }
+    .header .container .in_header .right, .header .container .in_header .center, .header .container .in_header .left {
+       display: none;
+    }
+    .first .container .first_center_text .first_img {
+        display: none;
+    }
+    .first .container .first_center_text .first_text h1 {
+        font-size: 25px;
+        line-height: 40px;
+        margin-top: 100px;
+    }
+    .first .container .first_center_text .first_text {
+        max-width: 305px;
+        text-align: center;
+    }
+    .about .container .about_in h2 {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 45px;
+        letter-spacing: 0;
+        padding: 50px 0;
+        text-align: center;
+    }
+    .footer .container .footer_text {
+        padding: 0;
+        display: block;
+    }
+    .footer .container .footer_text .about_were p {
+        margin: 0 auto;
+    }
+    .first .container .modalka .block {
+        max-width: 473px;
+        height: 374.18px;
+        position: relative;
+        top: 186px;
+        left: 83px;
+    }
+    .first .container .modalka .block .block_bg .block_in .inp2 {
+        width: 380.73px;
+        height: 56.65px;
+        margin: 7px auto;
+    }
+    .first .container .modalka .block .block_bg .block_in .inp1 {
+        width: 301.49px;
+        margin-bottom: 10px;
+    }
+    .burger_menu {
+        display: block;
+    }
+}
+
+@media(max-width:576px) {
+    .first .container .bg_imgs .small_bottom1, .small_bottom2, .small_bottom3, .small_top1, .small_top2 {
+        position: relative;
+        display: none;
+    }
+    .burger_menu_actived a {
+        font-size: 32px;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding: 21px 0;
+    }
+    .first .container .modalka .block .block_bg .block_in .inp2 {
+        width: 277.73px;
+        height: 48.65px;
+        margin: 7px auto;
+    }
+    .first .container .modalka .block .block_bg .block_in .inp1 {
+        width: 226.49px;
+        margin-bottom: 6px;
+        height: 42px;
+    }
+    .first .container .modalka .block .block_bg .block_in h3 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28.13px;
+        letter-spacing: 0;
+        margin-bottom: 36px;
+    }
+    .first .container .modalka .block .block_bg .cross {
+        position: absolute;
+        top: 21px;
+        right: 32px;
+        height: 14px;
+    }
+    .about .container .about_in h2 {
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 45px;
+        letter-spacing: 0;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .slider .swiper_wraper .swiper_slide {
+        width: 536px;
+        height: 251px;
+        border-radius: 9px;
+        margin: 20px 30px;
+        padding: 0 45px;
+        padding-top: 45px;
+    }
+    .on_logo2 h2 {
+        font-size: 25px;
+    }
+    .logo img {
+        max-width: 100%;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    }
+    .first .container .first_center_text .first_text h1 {
+        font-size: 27px;
+        line-height: 30px;
+        margin-top: 50px;
+    }
+    .first .container .modalka .block {
+        max-width: 296px;
+        height: 353.18px;
+        position: relative;
+        top: 186px;
+        left: 62px;
+    }
+    .slider .swiper_wraper .swiper_slide .slide_in p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+@media(max-width:360px) {
+.about .container .about_in .about_grid .about_block .about_img {
+        height: 45%;
+        max-width: 100%;
+    }
+    .about .container .about_in .about_grid .about_block .about_img img {
+        border-radius: 8px;
+        height: 102%;
+    }
+    .about .container .about_in .about_grid .about_block {
+        margin: 0 auto;
+        height: 393px;
+    }
+    .about .container .about_in .about_grid .about_block .about_text p {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0;
+        color: #a1a1a1;
+    }
+    .slider .swiper_wraper .swiper_slide .slide_in p {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0;
+    }
+    .footer .container .footer_text .were h3 {
+        padding-bottom: 10px;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15.5px;
+        letter-spacing: 0;
+    }
+    .footer .container .footer_text .about_were h3 {
+        padding: 10px;
+        text-align: center;
+    }
+    .first .container .modalka .block {
+        max-width: 296px;
+        height: 353.18px;
+        position: relative;
+        top: 186px;
+        left: 24px;
+    }
+}

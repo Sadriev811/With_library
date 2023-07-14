@@ -1,0 +1,380 @@
+@import './obnulenie.scss';
+// HEADER
+
+.active {
+    display: block;
+}
+.header {
+    @extend %header_first_of;
+    .container {
+        .in_header {
+            @include flex (flex, center, space-between);
+            height: 77px;
+            .left {
+                @extend %header_txt;
+                @extend %tel;
+            }
+            .center {
+                @extend %header_txt;
+                @extend %loc;
+            }
+            .right {
+                @extend %header_txt;
+                @extend %inst;
+            }
+        }
+    }
+}
+
+// FIRST
+
+.first {
+    padding: 0 15px;
+    height: 704px;
+    margin-bottom: 25px;
+    .container {
+        // 1
+        .in_first {
+            @include flex (flex, center, space-between);
+            .on_logo {
+                @include flex (flex, center, flex-start);
+                .logo {
+                    @extend %logo;
+                }
+                .logo_text {
+                    h2 {
+                        @include text (900, 36px, 42.19px, 0);
+                        font-style: italic;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .right_next {
+                @extend %textOfRightText;
+            }
+        }
+
+        // 2
+        .bg_imgs {
+            @extend %bg_imgs;
+        }
+
+        // 3
+        .first_center_text {
+            @include flex (flex, center, center);
+            .first_text {
+                max-width: 676px;
+                h1 {
+                    @include text (900, 50px, 58.59px, 0);
+                }
+                h4 {
+                    @include text (300, 24px, 28.13px, 0);
+                }
+                .btn {
+                    @extend %btn;
+            }
+        }
+        @extend %first_text_anim;
+    }
+
+    // 4
+    .modalka {
+        @extend %modalka;
+        .block {
+            @extend %block;
+
+            .block_bg {
+                @extend %block_bg;
+                
+                @extend %block_in;
+                input {
+                    cursor: pointer;
+                    &:focus {
+                        outline: 1.5px solid rgb(90, 0, 151);
+                    }
+                    &:focus::placeholder {
+                        color: rgb(90, 0, 151);
+                    }
+                }
+            .cross {
+                @extend %cross;
+            }
+            }
+            
+
+        }
+    }
+}
+}
+
+// SECOND
+
+.about {
+    @extend %about;
+    .container {
+        .about_in {
+            
+            h2 {
+                @include text (400, 50px, 58.58px, 0);
+                padding: 80px 0;
+                text-align: center;
+                span {
+                    color: #b901a3;
+                }
+            }
+
+            .about_grid {
+                @include grid (grid, repeat(3, 1fr), 61px);
+                .about_block {
+                    @extend %about_block;
+
+                    .about_img {
+                        @extend %about_img;
+                    }
+                    .about_text {
+                    @extend %about_text;
+                    }
+                }
+                
+            }
+
+        }
+    }
+}
+
+// THIRD
+.op0 {
+    opacity: 0.4;
+}
+.op1 {
+    opacity: 1;
+}
+
+.on_logo2 {
+    display: none;
+}
+.all_swiper {
+    max-width: 100%;
+    height: 357px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background: linear-gradient(94.31deg, rgba(212, 20, 90, 0.25) 0.96%, rgba(46, 49, 146, 0.25) 104.83%);
+    .swiper {
+    .swiper-wrapper {
+        max-width: 100%;
+        height: 357px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .swiper-slide {
+            max-width: 600px;
+            height: 250px;
+            text-align: center;
+            background: white;
+            border-radius: 10px;
+            opacity: 0.6;
+
+            &:hover {
+                opacity: 1;
+            }
+            .slide_in {
+                padding-top: 80px;
+                padding-left: 30px;
+                padding-right: 30px;
+                img {
+                   margin: 20px 0 5px 0 ;
+                }
+            }
+        }
+    }
+}
+}
+// four
+
+.footer {
+    height: 295px;
+    margin-bottom: 70px;
+    
+    .container {
+        .footer_img {
+        position: relative;
+        z-index: -1;
+        .footer_img_1 {
+            position: absolute;
+            top: 50px;
+            left: 0px;
+            
+            
+        }
+        .footer_img_2 {
+            position: absolute;
+            top: 0;
+            right: 0px;
+            z-index: -1;
+        }
+    }
+        padding: 0 70px;
+        .footer_text {
+            @include flex (flex, center, space-between);
+            height: 295px;
+            padding-top: 150px;
+            .were {
+                h3 {
+                    padding-bottom: 10px;
+                    @include text (700, 14px, 16.50px, 0);
+                }
+            }
+            .contact {
+                h3 {
+                    padding-bottom: 10px;
+                    @include text (700, 14px, 16.50px, 0);
+                }
+                p {
+                    @include text (300, 14px, 20px, 0);
+                }
+            }
+            .about_were {
+                h3 {
+                    padding-bottom: 10px;
+                    @include text (700, 14px, 16.50px, 0);
+                }
+                p {
+                    width: 224px;
+                    @include text (300, 14px, 20px, 0);
+                }
+            }
+        }
+    }
+}
+
+// ============================== burger menu
+.burger_menu {
+    display: none;
+    position: fixed;
+    right: 25px;
+    z-index: 100;
+    align-items: center;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    
+ }
+ 
+ .burger_menu span {
+     height: 5px;
+     width: 5px;
+     background: white;
+     border-radius: 3px;
+     transition: all 0.6s ease;
+     transform: scale(1);
+     z-index: 100;
+ }
+ 
+ .burger_menu::before, .burger_menu::after {
+     content: '';
+     position: absolute;
+     height: 5px;
+     width: 5px;
+     background: white;
+     border-radius: 3px;
+     transition: all 0.6s ease;
+ }
+ .burger_menu::before {
+     top: 0;
+ }
+ 
+ .burger_menu::after {
+     bottom: 0;
+ }
+
+
+ .over {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000000b1;
+    z-index: 69;
+    display: none;
+    animation-name: bg_opacity;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+ }
+ .burger_menu_actived {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 150px;
+    z-index: 70;
+    transition: 1s ease-in-out;
+    background: #1d2071;
+    display: none;
+    padding: 150px;
+        animation-name: bg_opacity;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+    a{
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding: 30px 0;
+    }
+}
+.active2 {
+    display: block;
+}
+@keyframes bg_opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+ .burger_menu.active span, .burger_menu.active::before, .burger_menu.active::after{
+     height: 3.5px;
+     width: 80%;
+     border-radius: 3px;
+ }
+ .burger_menu.active span {
+     transform: scale(0);
+     
+ }
+ .burger_menu.active::before {
+     top: 49%;
+     transform: rotate(-45deg) translate(0, -50%); 
+ }
+ 
+ .burger_menu.active::after {
+     bottom: 46%;
+     transform: rotate(45deg) translate(0, 50%); 
+ }
+// dragula 
+.gu-mirror {
+    position: fixed !important;
+    margin: 0 !important;
+    z-index: 9999 !important;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+  }
+  .gu-hide {
+    display: none !important;
+  }
+  .gu-unselectable {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+  }
+  .gu-transit {
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+  }
+  
